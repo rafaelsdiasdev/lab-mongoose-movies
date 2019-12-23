@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col">
+      <h2>Movies</h2>
       <p><a class="btn btn-outline-info btn-sm" href="/movie/new/">ADD</a></p>
-
       {{#each movies}}
       <form action="/movies/{{_id}}" method="POST">
         <p>
