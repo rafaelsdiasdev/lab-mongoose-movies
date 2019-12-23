@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col ">
+      <h2>Edit Movies</h2>
+      <form action='/movies/{{this.id}}/edit' method="POST">
+        <div class="form-group">
+          <label for="">Title</label>
+          <input class="form-control" type="text" value="{{this.title}}" name="tille">
+        </div>
+        <div class="form-group">
+          <label for="">Genre</label>
+          <input class="form-control" type="text" value="{{this.genre}}" name="genre">
+        </div>
+        <div class="form-group">
+          <label for="plot">Plot</label>
+          <textarea class="form-control" id="plot" rows="6">{{this.plot}}</textarea>
+        </div>
+        <button class="btn btn-outline-info btn-sm" type="submit">EDIT</button>
+      </form>
+      <p><a class="btn btn-outline-info btn-sm mt-4" href="/movies">Return</a></p>
+    </div>
+  </div>
+</div>

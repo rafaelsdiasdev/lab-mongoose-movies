@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p><a class="btn btn-outline-info btn-sm" href="/celebritie/new/">ADD</a></p>
+      {{#each celebrities}}
+      <form action="/celebrities/{{_id}}" method="POST">
+        <p>
+          <a class="btn btn-outline-secondary btn-sm" href="/celebrities/{{this.id}}">{{this.name}}</a>
+          <a class="btn btn-outline-info btn-sm" href="/celebrities/{{this.id}}/edit">EDIT</a>
+          <button class="btn btn-outline-info btn-sm" type="submit">REMOVE</button>
+        </p>
+      </form>
+      {{/each}}
+      <p><a class="btn btn-outline-info btn-sm" href="/">Return</a></p>
+
+    </div>
+  </div>
+</div>
